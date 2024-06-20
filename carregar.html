@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Projeto</title>
+    <link rel="stylesheet" href="carregar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enviar seu Projeto</h1>
+
+        <div class="instructions">
+            Olá, “usuário"! Agora você já pode iniciar o seu projeto.<br>
+            Baixe o arquivo e preencha-o, em seguida salve os<br>
+            dados com o nome da instituição, depois é só anexar o<br>
+            arquivo e enviar. Em caso de qualquer dificuldade<br>
+            enfrentada, temos um vídeo gravado especialmente<br>
+            para te ajudar❞usuário".
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="Exemplo video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <div class="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+            Arraste e solte o arquivo aqui
+        </div>
+
+        <div class="actions">
+            <button class="button">Baixe Arquivo</button>
+            <button class="button" onclick="enviarArquivo()">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
